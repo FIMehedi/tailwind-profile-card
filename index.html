@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
 
@@ -15,12 +19,12 @@
       <div
         class="mx-auto w-fit rounded-md bg-white p-5 shadow-md transition dark:bg-slate-900"
       >
-        <button
-          id="dark-mode-toggle"
-          class="ml-auto flex rounded bg-slate-800 px-2 py-1 text-sm text-white transition dark:bg-slate-200 dark:text-black"
-        >
-          Dark
-        </button>
+        <div class="ml-auto w-fit">
+          <i
+            class="bx bx-toggle-left cursor-pointer text-3xl transition dark:text-white"
+            id="darkToggler"
+          ></i>
+        </div>
         <div class="px-10 py-3">
           <div
             class="mx-auto w-32 overflow-hidden rounded-full border-2 border-green-700"

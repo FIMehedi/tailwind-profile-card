@@ -1,9 +1,7 @@
-let darkModeToggler = document.getElementById('dark-mode-toggle');
-let darkMode = false;
-let htmlTag = document.getElementById('HTMLTAG');
+const htmlTag = document.getElementById('HTMLTAG');
+const darkToggler = document.getElementById('darkToggler');
 
-darkModeToggler.addEventListener('click', () => {
-  darkModeToggler.innerText = darkMode ? "Dark" : "Light";
+darkToggler.addEventListener('click', () => {
   htmlTag.classList.toggle('dark');
-  darkMode = !darkMode;
+  darkToggler.classList.toggle('bx-toggle-right');
 });
